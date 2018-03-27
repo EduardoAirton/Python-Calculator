@@ -11,17 +11,17 @@ while sair.lower() != "nao":
         numero1 = float(input("Digite o primeiro numero: "))
         numero2 = float(input("Digite o segundo numero: "))
     except ValueError:
-        print("\n-----------------")
+        print("\n----------------------")
         print("ERRO")
         print("Digite um numero valido!")
-        print("-----------------")
+        print("------------------------")
         print("\n")
         continue
 
     operacao = input("\nDigite a operação desejada: \n-> + \n-> -\n-> *\n-> /\nResposta: ")
 
     if operacao == "+":
-        resultado = float(numero1) + numero2
+        resultado = numero1 + numero2
     elif operacao == "-":
         resultado = numero1 - numero2
     elif operacao == "*":
